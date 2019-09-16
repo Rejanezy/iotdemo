@@ -50,7 +50,7 @@
 
     $(()=>{
         $("button").click(function(){
-            let urlAPI = "https://thingspeak.com/channels/860695/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15";
+            let urlAPI = "https://api.thingspeak.com/update?api_key=DRAKWIUM5IN8ZXWW&field1=50&field2=150";
             $.get(urlAPI, function(data, status){
                // alert("Data: " + data + "\nStatus: " + status);
                 console.log(JSON.stringify(data.feeds));
@@ -79,19 +79,33 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	},
 	data: [{        
 		type: "line",       
-		dataPoints: [
-			{ y: 450 },
-			{ y: 414},
-			{ y: 520, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
-			{ y: 460 },
-			{ y: 450 },
-			{ y: 500 },
-			{ y: 480 },
-			{ y: 480 },
-			{ y: 410 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
-			{ y: 500 },
-			{ y: 480 },
-			{ y: 510 }
+		d{
+channel: {
+id: 860695,
+name: "myiot",
+latitude: "0.0",
+longitude: "0.0",
+field1: "data1",
+field2: "data2",
+created_at: "2019-09-09T09:29:31Z",
+updated_at: "2019-09-09T09:29:32Z",
+last_entry_id: 5
+},
+feeds: [
+{
+created_at: "2019-09-16T08:32:07Z",
+entry_id: 4,
+field1: "15",
+field2: "50"
+},
+{
+created_at: "2019-09-16T08:32:58Z",
+entry_id: 5,
+field1: "50",
+field2: "150"
+}
+]
+}
 		]
 	}]
 });
