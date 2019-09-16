@@ -50,7 +50,7 @@
 
     $(()=>{
         $("button").click(function(){
-            let urlAPI = "https://api.thingspeak.com/update?api_key=DRAKWIUM5IN8ZXWW&field1=50&field2=150";
+            let urlAPI = "https://thingspeak.com/channels/860695/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15";
             $.get(urlAPI, function(data, status){
                // alert("Data: " + data + "\nStatus: " + status);
                 console.log(JSON.stringify(data.feeds));
