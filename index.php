@@ -61,47 +61,37 @@
 
       });  
 </script>
-<!DOCTYPE HTML>
+
+	<!DOCTYPE HTML>
 <html>
 <head>  
 <script>
 window.onload = function () {
 
 var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,  
+	animationEnabled: true,
+	theme: "light2",
 	title:{
-		text: "Music Album Sales by Year"
+		text: "Simple Line Chart"
 	},
-	axisY: {
-		title: "Units Sold",
-		valueFormatString: "#0,,.",
-		suffix: "mn",
-		stripLines: [{
-			value: 3366500,
-			label: "Average"
-		}]
+	axisY:{
+		includeZero: false
 	},
-	data: [{
-		yValueFormatString: "#,### Units",
-		xValueFormatString: "YYYY",
-		type: "spline",
+	data: [{        
+		type: "line",       
 		dataPoints: [
-			{x: new Date(2002, 0), y: 2506000},
-			{x: new Date(2003, 0), y: 2798000},
-			{x: new Date(2004, 0), y: 3386000},
-			{x: new Date(2005, 0), y: 6944000},
-			{x: new Date(2006, 0), y: 6026000},
-			{x: new Date(2007, 0), y: 2394000},
-			{x: new Date(2008, 0), y: 1872000},
-			{x: new Date(2009, 0), y: 2140000},
-			{x: new Date(2010, 0), y: 7289000},
-			{x: new Date(2011, 0), y: 4830000},
-			{x: new Date(2012, 0), y: 2009000},
-			{x: new Date(2013, 0), y: 2840000},
-			{x: new Date(2014, 0), y: 2396000},
-			{x: new Date(2015, 0), y: 1613000},
-			{x: new Date(2016, 0), y: 2821000},
-			{x: new Date(2017, 0), y: 2000000}
+			{ y: 450 },
+			{ y: 414},
+			{ y: 520, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
+			{ y: 460 },
+			{ y: 450 },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 480 },
+			{ y: 410 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 510 }
 		]
 	}]
 });
