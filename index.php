@@ -71,32 +71,45 @@ window.onload = function () {
 var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	theme: "light2",
-	title:{
-		text: "Simple Line Chart"
-	},
-	axisY:{
-		includeZero: false
-	},
-	data: [{        
-		type: "line",       
-		dataPoints: [
-			{ y: 450 },
-			{ y: 414},
-			{ y: 520, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
-			{ y: 460 },
-			{ y: 450 },
-			{ y: 500 },
-			{ y: 480 },
-			{ y: 480 },
-			{ y: 410 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
-			{ y: 500 },
-			{ y: 480 },
-			{ y: 510 }
-		]
-	}]
-});
-chart.render();
-
+	{
+channel: {
+id: 860695,
+name: "myiot",
+latitude: "0.0",
+longitude: "0.0",
+field1: "data1",
+field2: "data2",
+created_at: "2019-09-09T09:29:31Z",
+updated_at: "2019-09-09T09:29:32Z",
+last_entry_id: 5
+},
+feeds: [
+{
+created_at: "2019-09-09T09:32:50Z",
+entry_id: 1,
+field1: "0"
+},
+{
+created_at: "2019-09-09T09:33:13Z",
+entry_id: 2,
+field1: "10"
+},
+{
+created_at: "2019-09-09T09:35:48Z",
+entry_id: 3,
+field1: "5"
+},
+{
+created_at: "2019-09-16T08:32:07Z",
+entry_id: 4,
+field1: "15"
+},
+{
+created_at: "2019-09-16T08:32:58Z",
+entry_id: 5,
+field1: "50"
+}
+]
 }
 </script>
 </head>
