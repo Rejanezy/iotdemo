@@ -9,7 +9,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Hello, Laddawan  Sangsomsak!</h1>
     <button id="btnClick"> click </button>
     <div id="chartContainer" style="height: 370px; width: 100%;"></div>
     <!-- Optional JavaScript -->
@@ -62,10 +62,10 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	theme: "light2",
 	title:{
-		text: "Simple Line Chart"
+		text: "Simple Line Chart  My IOT"
 	},
 	axisY:{
-		includeZero: false
+		includeZero: true
 	},
 	data: [{        
 		type: "line",       
