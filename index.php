@@ -67,7 +67,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	axisY:{
 		includeZero: false
 	},
-	feeds: [
+	 feeds: [
 {
 created_at: "2019-09-09T09:32:50Z",
 entry_id: 1,
