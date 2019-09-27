@@ -94,44 +94,22 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		markerType: "square",
 		xValueFormatString: "DD MMM, YYYY",
 		color: "#F08080",
-		dataPoints:feeds: [
-{
-created_at: "2019-09-09T09:32:50Z",
-entry_id: 1,
-field1: "0",
-field2: null
-},
-{
-created_at: "2019-09-09T09:33:13Z",
-entry_id: 2,
-field1: "10",
-field2: null
-},
-{
-created_at: "2019-09-09T09:35:48Z",
-entry_id: 3,
-field1: "5",
-field2: null
-},
-{
-created_at: "2019-09-16T08:32:07Z",
-entry_id: 4,
-field1: "15",
-field2: "50"
-},
-{
-created_at: "2019-09-16T08:32:58Z",
-entry_id: 5,
-field1: "50",
-field2: "150"
-},
-{
-created_at: "2019-09-27T15:18:47Z",
-entry_id: 6,
-field1: "50",
-field2: null
-}
-]
+		dataPoints:feeds:  [
+			{ x: new Date(2017, 0, 3), y: 510 },
+			{ x: new Date(2017, 0, 4), y: 560 },
+			{ x: new Date(2017, 0, 5), y: 540 },
+			{ x: new Date(2017, 0, 6), y: 558 },
+			{ x: new Date(2017, 0, 7), y: 544 },
+			{ x: new Date(2017, 0, 8), y: 693 },
+			{ x: new Date(2017, 0, 9), y: 657 },
+			{ x: new Date(2017, 0, 10), y: 663 },
+			{ x: new Date(2017, 0, 11), y: 639 },
+			{ x: new Date(2017, 0, 12), y: 673 },
+			{ x: new Date(2017, 0, 13), y: 660 },
+			{ x: new Date(2017, 0, 14), y: 562 },
+			{ x: new Date(2017, 0, 15), y: 643 },
+			{ x: new Date(2017, 0, 16), y: 570 }
+		]
 	},
 	{
 		type: "line",
