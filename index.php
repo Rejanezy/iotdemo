@@ -68,10 +68,7 @@
 <script>
 window.onload = function () {
 
-var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-	theme: "light2",
-	{
+{
 channel: {
 id: 860695,
 name: "myiot",
@@ -110,6 +107,7 @@ entry_id: 5,
 field1: "50"
 }
 ]
+}
 }
 </script>
 </head>
