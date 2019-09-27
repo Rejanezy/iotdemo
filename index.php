@@ -9,7 +9,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, Laddawan  Sangsomsak!</h1>
+    <h1>Hello, world!</h1>
     <button id="btnClick"> click </button>
     <div id="chartContainer" style="height: 370px; width: 100%;"></div>
     <!-- Optional JavaScript -->
@@ -62,39 +62,26 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	theme: "light2",
 	title:{
-		text: "Simple Line Chart  My IOT"
+		text: "Simple Line Chart"
 	},
 	axisY:{
-		includeZero: true
+		includeZero: false
 	},
 	data: [{        
 		type: "line",       
 		dataPoints: [
-			{
-created_at: "2019-09-09T09:32:50Z",
-entry_id: 1,
-field1: "0"
-},
-{
-created_at: "2019-09-09T09:33:13Z",
-entry_id: 2,
-field1: "10"
-},
-{
-created_at: "2019-09-09T09:35:48Z",
-entry_id: 3,
-field1: "5"
-},
-{
-created_at: "2019-09-16T08:32:07Z",
-entry_id: 4,
-field1: "15"
-},
-{
-created_at: "2019-09-16T08:32:58Z",
-entry_id: 5,
-field1: "50"
-}
+			{ y: 0 },
+			{ y: 25},
+			{ y: 50, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
+			{ y: 55 },
+			{ y: 60 },
+			{ y: 65 },
+			{ y: 70 },
+			{ y: 75 },
+			{ y: 80 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+			{ y: 85 },
+			{ y: 90 },
+			{ y: 100 }
 		]
 	}]
 });
