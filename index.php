@@ -9,7 +9,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Hello, LADDAWAN!</h1>
     <button id="btnClick"> click </button>
     <div id="chartContainer" style="height: 370px; width: 100%;"></div>
     <!-- Optional JavaScript -->
@@ -62,12 +62,29 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	theme: "light2",
 	title:{
-		text: "Simple Line Chart"
+		text: "Simple Line Chart IOT"
 	},
 	axisY:{
 		includeZero: false
 	},
 	data: [{        
+		type: "line",       
+		dataPoints: [
+			{ y: 0 },
+			{ y: 25},
+			{ y: 50, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
+			{ y: 55 },
+			{ y: 60 },
+			{ y: 65 },
+			{ y: 70 },
+			{ y: 75 },
+			{ y: 80 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+			{ y: 85 },
+			{ y: 90 },
+			{ y: 100 }
+		]
+	}]
+	[{        
 		type: "line",       
 		dataPoints: [
 			{ y: 0 },
