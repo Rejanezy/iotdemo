@@ -10,7 +10,7 @@
   </head>
   <body>
     <h1>Hello, LADDAWAN!</h1>
-    <button id="btnClick"> click </button>
+<!--     <button id="btnClick"> click </button> -->
     <div id="chartContainer" style="height: 370px; width: 100%;"></div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -135,7 +135,6 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	}]
 });
 chart.render();
-
 function toogleDataSeries(e){
 	if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
 		e.dataSeries.visible = false;
@@ -144,13 +143,13 @@ function toogleDataSeries(e){
 	}
 	chart.render();
 }
-
 }
 </script>
 </head>
 <body>
 <div id="chartContainer" style="height: 300px; width: 100%;"></div>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<button id="btnClick"> click </button>
 </body>
 </html>
 </html>
