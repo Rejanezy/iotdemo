@@ -10,7 +10,7 @@
   </head>
   <body>
     <h1>Hello, LADDAWAN!</h1>
-<!--     <button id="btnClick"> click </button> -->
+    <button id="btnClick"> click </button>
     <div id="chartContainer" style="height: 370px; width: 100%;"></div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -19,45 +19,45 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   </body>
-  <script>
- <script>
+//   <script>
+//  <script>
       
-      function plot (dataPoints) {
+//       function plot (dataPoints) {
     
-    var chart = new CanvasJS.Chart("chartContainer", {
-      animationEnabled: true,
-      theme: "light2",
-      title:{
-        text: "Simple Line Chart"
-      },
-      axisY:{
-        includeZero: false
-      },
-      data: [{        
-        type: "line",       
-        dataPoints: dataPoints
-      }]
-    });
-    chart.render();
+//     var chart = new CanvasJS.Chart("chartContainer", {
+//       animationEnabled: true,
+//       theme: "light2",
+//       title:{
+//         text: "Simple Line Chart"
+//       },
+//       axisY:{
+//         includeZero: false
+//       },
+//       data: [{        
+//         type: "line",       
+//         dataPoints: dataPoints
+//       }]
+//     });
+//     chart.render();
     
-    }
-    $(()=>{
-        $("button").click(function(){
-            let urlAPI = "https://thingspeak.com/channels/860695/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15";
-            $.get(urlAPI, function(data, status){
-               // alert("Data: " + data + "\nStatus: " + status);
-                console.log(JSON.stringify(data.feeds));
-                var dataPoints = [];
-                plot(dataPoints);
-            });
-        });
-      });  
-</script>
+//     }
+//     $(()=>{
+//         $("button").click(function(){
+//             let urlAPI = "https://thingspeak.com/channels/860695/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15";
+//             $.get(urlAPI, function(data, status){
+//                // alert("Data: " + data + "\nStatus: " + status);
+//                 console.log(JSON.stringify(data.feeds));
+//                 var dataPoints = [];
+//                 plot(dataPoints);
+//             });
+//         });
+//       });  
+// </script>
 	<!DOCTYPE HTML>
 <html>
 <head>  
 <script>
-window.onload = function () {
+ function plot () {
 var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	theme: "light2",
@@ -146,10 +146,10 @@ function toogleDataSeries(e){
 }
 </script>
 </head>
-<body>
+<!-- <body>
 <div id="chartContainer" style="height: 300px; width: 100%;"></div>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <button id="btnClick"> click </button>
 </body>
-</html>
+</html> -->
 </html>
